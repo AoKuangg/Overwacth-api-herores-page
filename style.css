@@ -55,3 +55,23 @@ nav {
 .navbar-menu li a:hover {
     color: #ccc;
   }
+.category-selector{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.category-selector button{
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: pointer;
+}
+.category-selector button.active{
+    background-color: #fff;
+    color: #000;
+    border: 5px;
+}
