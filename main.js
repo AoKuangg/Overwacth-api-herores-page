@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
   crearCarta();
 });
-
+const url = './dataapi/heroes.json'
 // const options = {
 //   'all': url = './dataapi/heroes.json',
 //   'Tank' : url='./dataapi/tank.json',
