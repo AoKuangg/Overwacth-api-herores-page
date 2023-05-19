@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", function(){
   crearCarta();
 });
 
-const options = {
-  'all': url = './dataapi/heroes.json',
-  'Tank' : url='./dataapi/tank.json',
-  'Damage' : url='./dataapi/damage.json',
-  'Support' : url='./dataapi/support.json',
-}
+// const options = {
+//   'all': url = './dataapi/heroes.json',
+//   'Tank' : url='./dataapi/tank.json',
+//   'Damage' : url='./dataapi/damage.json',
+//   'Support' : url='./dataapi/support.json',
+// }
 
 // let btn = document.querySelector('category-selector');
 // btn.addEventListener("click",(e)=>{
