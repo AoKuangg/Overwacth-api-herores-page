@@ -1,24 +1,24 @@
 document.addEventListener("DOMContentLoaded", function(){
-  crearCarta();
+  let url = "./dataapi/heroes.json";
+  crearCarta(url);
+  const category = document.getElementById("category-selector");
+
+  category.addEventListener('click', (e)=>{
+    if (e.target.tagName === "BUTTON"){
+      const url = e.target.dataset.url;
+      crearCarta(url);
+    }
+  })
 });
-const url = './dataapi/heroes.json'
-// const options = {
-//   'all': url = './dataapi/heroes.json',
-//   'Tank' : url='./dataapi/tank.json',
-//   'Damage' : url='./dataapi/damage.json',
-//   'Support' : url='./dataapi/support.json',
-// }
+// const url = './dataapi/heroes.json'
 
-// let btn = document.querySelector('category-selector');
-// btn.addEventListener("click",(e)=>{
-//   let valor= 
-// })
 
-async function crearCarta(){
+async function crearCarta(url){
   try {
     const response = await fetch(url);
     const data = await response.json();
     const contenedorCartas = document.querySelector('.contenedorCartas')
+    contenedorCartas.innerHTML = ''
     data.forEach(objeto =>{
       const nombre = objeto.name;
       const portrait = objeto.portrait;
