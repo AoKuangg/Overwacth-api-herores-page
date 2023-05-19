@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 async function crearCarta(){
   try {
-    const response = await fetch('./heroes.json');
+    const response = await fetch('./dataapi/heroes.json');
     const data = await response.json();
     const contenedorCartas = document.querySelector('.contenedorCartas')
     data.forEach(objeto =>{
